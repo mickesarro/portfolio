@@ -1,17 +1,26 @@
 ---
-
+import { getCollection } from 'astro:content';
+const projects = await getCollection('projects');
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <title>My Portfolio</title>
+  </head>
+  <body class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-6">Selected Projects</h1>
+    <div class="grid gap-6">
+      {projects.map((project) => (
+        <article class="p-6 border rounded-lg">
+          <h2 class="text-xl font-semibold">{project.data.title}</h2>
+          <p class="text-gray-600 mt-2">{project.data.description}</p>
+          {project.data.link && (
+            <a href={project.data.link} class="text-blue-500 hover:underline mt-4 inline-block">
+              View Project →
+            </a>
+          )}
+        </article>
+      ))}
+    </div>
+  </body>
 </html>
