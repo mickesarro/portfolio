@@ -61,14 +61,97 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
               <img src={project.data.image} alt={project.data.title} style="max-width: 100%; border-radius: 6px; margin-bottom: 1rem;" />
             )}
 
-            <div class="markdown-body">
-              <Content />
+            <p style="margin: 0 0 1rem 0;">{project.data.description}</p>
+
+            <button class="read-more-btn" aria-expanded="false">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+              <span class="text">Read more</span>
+            </button>
+
+            <div class="expandable-wrapper">
+              <div class="expandable-inner">
+                <div class="markdown-body" style="padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--border);">
+                  <Content />
+                </div>
+              </div>
             </div>
-            
-            {/* The old bottom link section has been completely removed */}
+
           </article>
         )
       })}
     </div>
   </section>
 </Layout>
+
+<style>
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding: 0;
+    font-family: inherit;
+  }
+  
+  .read-more-btn .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    transition: transform 0.3s ease;
+  }
+  
+  .read-more-btn[aria-expanded="true"] .icon {
+    transform: rotate(180deg);
+  }
+
+  /* Seamless CSS Grid expansion */
+  .expandable-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+  }
+  
+  .expandable-wrapper.is-open {
+    grid-template-rows: 1fr;
+  }
+  
+  .expandable-inner {
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll('.read-more-btn');
+  
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const article = button.closest('article');
+      const wrapper = article.querySelector('.expandable-wrapper');
+      const textSpan = button.querySelector('.text');
+      
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      
+      if (isExpanded) {
+        wrapper.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+        textSpan.textContent = 'Read more';
+      } else {
+        wrapper.classList.add('is-open');
+        button.setAttribute('aria-expanded', 'true');
+        textSpan.textContent = 'Read less';
+      }
+    });
+  });
+</script>
