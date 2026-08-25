@@ -1,26 +1,71 @@
 ---
-import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+
+// Fetch the About section
+const aboutEntry = await getEntry('pages', 'about');
+// Use the new Astro 5 render function
+const { Content: AboutContent } = aboutEntry ? await render(aboutEntry) : { Content: () => null };
+
+// Fetch projects and sort them by the 'order' field
 const projects = await getCollection('projects');
+const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<html lang="en">
-  <head>
-    <title>My Portfolio</title>
-  </head>
-  <body class="max-w-3xl mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold mb-6">Selected Projects</h1>
-    <div class="grid gap-6">
-      {projects.map((project) => (
-        <article class="p-6 border rounded-lg">
-          <h2 class="text-xl font-semibold">{project.data.title}</h2>
-          <p class="text-gray-600 mt-2">{project.data.description}</p>
-          {project.data.link && (
-            <a href={project.data.link} class="text-blue-500 hover:underline mt-4 inline-block">
-              View Project →
-            </a>
-          )}
-        </article>
-      ))}
+<Layout>
+  <!-- Who Am I Section -->
+  <section class="markdown-body">
+    {aboutEntry && <AboutContent />}
+  </section>
+
+  <hr style="margin: 3rem 0; border-color: var(--border);" />
+
+  <!-- Projects Sequential List -->
+  <section>
+    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Projects</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 3rem;">
+      {sortedProjects.map(async (project) => {
+        const { Content } = await render(project);
+        return (
+          <article style="background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+            <header style="margin-bottom: 1rem;">
+              <h3 style="margin: 0 0 0.5rem 0; font-size: 1.5rem; color: var(--accent);">
+                {project.data.title}
+              </h3>
+              
+              {project.data.tags && (
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                  {project.data.tags.map(tag => (
+                    <span style="background: rgba(255,255,255,0.1); padding: 0.1rem 0.5rem; border-radius: 99px; font-size: 0.8rem;">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </header>
+
+            {project.data.image && (
+              <img src={project.data.image} alt={project.data.title} style="max-width: 100%; border-radius: 6px; margin-bottom: 1rem;" />
+            )}
+
+            <div class="markdown-body">
+              <Content />
+            </div>
+
+            {project.data.links && project.data.links.length > 0 && (
+              <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+                <strong>Links:</strong>
+                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                  {project.data.links.map(link => (
+                    <li><a href={link} style="color: var(--accent);">{link}</a></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </article>
+        )
+      })}
     </div>
-  </body>
-</html>
+  </section>
+</Layout>

@@ -1,0 +1,73 @@
+---
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style is:global>
+      :root {
+        --bg-color: #0f172a; /* Slate 900 - Dark Blue */
+        --card-bg: #1e293b;  /* Slate 800 */
+        --text-main: #e2e8f0; /* Slate 200 */
+        --text-muted: #94a3b8;
+        --accent: #38bdf8; /* Sky 400 */
+        --border: #334155;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      /* Top Navigation */
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+        background-color: var(--card-bg);
+        border-bottom: 1px solid var(--border);
+      }
+      nav a {
+        color: var(--text-main);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      nav a:hover { color: var(--accent); }
+      
+      /* GitHub-like Markdown Styling */
+      .markdown-body h1, .markdown-body h2 {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.3em;
+        margin-top: 1.5em;
+      }
+      .markdown-body a { color: var(--accent); text-decoration: none; }
+      .markdown-body a:hover { text-decoration: underline; }
+      .markdown-body code {
+        background: rgba(255,255,255,0.1);
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-size: 85%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Projects</a>
+      <a href="/thesis">Thesis</a>
+    </nav>
+    <main class="container">
+      <slot />
+    </main>
+  </body>
+</html>

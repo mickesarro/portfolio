@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry, render } from 'astro:content';
+
+const thesisEntry = await getEntry('pages', 'thesis');
+const { Content } = thesisEntry ? await render(thesisEntry) : { Content: () => null };
+---
+
+<Layout>
+  <article class="markdown-body">
+    {thesisEntry ? <Content /> : <p>Thesis content not found.</p>}
+  </article>
+</Layout>
