@@ -2,7 +2,9 @@
 title: "Arduino-Analog-VTX"
 order: 2
 description: "DIY SmartAudio VTX Controller"
-link: "https://github.com/mickesarro/Arduino-Analog-VTX/tree/main"
+links: 
+  - name: "GitHub"
+    url: "https://github.com/mickesarro/Arduino-Analog-VTX/tree/main"
 tags: ["Arduino", "Smart Audio"]
 image: "wiring_diagram.png"
 ---
