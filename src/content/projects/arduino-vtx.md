@@ -1,12 +1,12 @@
 ---
-title: "Arduino-Analog-VTX"
+title: "Arduino-Analog-VTX Interferer"
 order: 2
 description: "DIY SmartAudio VTX Controller"
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Arduino-Analog-VTX/tree/main"
 tags: ["Arduino", "Smart Audio"]
-image: "wiring_diagram.png"
+image: "vtx-video.png"
 ---
 
 # DIY SmartAudio VTX Controller
@@ -32,6 +32,7 @@ Built and tested with:
 
 Below is the full wiring diagram:
 
+![Arduino Nano to VTX Wiring Diagram](/wiring_diagram.png)
 
 Through trial and error I figured the 1kΩ resistor is important, since SmartAudio is a shared, half-duplex, single-wire bus. Without it, the Arduino and VTX briefly driving the line at the same time can cause contention and corrupted commands.
 
