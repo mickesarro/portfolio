@@ -2,8 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 
-import { getEntry, render } from 'astro:content';
-
 // Thesis entry
 const thesisEntry = await getEntry('pages', 'thesis');
 const { Content } = thesisEntry ? await render(thesisEntry) : { Content: () => null };
