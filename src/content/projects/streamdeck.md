@@ -27,6 +27,8 @@ Custom-built touchscreen "Stream Deck" paired with a physical audio mixer. It us
 
 * **Touchscreen Controls:** On-screen buttons allow you to quickly manage media (Play/Pause, Rewind, Skip) or execute quick actions like deafening Discord or switching audio outputs.
 
+![Arduino Nano to VTX Wiring Diagram](/streamdeck-spotify.jpeg)
+
 
 ---
 
