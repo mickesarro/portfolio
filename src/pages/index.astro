@@ -145,6 +145,11 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
     color: var(--text-main);
   }
 
+  .about-section :global(h3 a) {
+    color: var(--accent);
+    text-decoration: underline; 
+  }
+
   .about-section {
     min-height: 85vh;
     display: flex;
@@ -152,9 +157,9 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
     justify-content: center;
   }
 
-  /* Social Buttons Styling */
   .social-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
   }

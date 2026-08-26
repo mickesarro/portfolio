@@ -8,3 +8,5 @@ title: "Who Am I"
 
 ### In my free time I like flying and building small FPV quadcopters, but I'm also interested in the security aspect of drones and their future applications. I am also passionate about cybersecurity with a particular interest in penetration testing and reverse engineering. I'm currently looking for opportunities in these areas, but I'm also open to any other roles where my skills could be fitting.
 
+### I can be reached through Email at: micke.sarro@gmail.com
+
