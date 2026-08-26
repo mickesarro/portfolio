@@ -10,6 +10,8 @@
 
       html {
         scroll-behavior: smooth;
+        /* Adds space so clicking an anchor link doesn't hide the title under the header */
+        scroll-padding-top: 100px; 
       }
 
       :root {
@@ -20,20 +22,24 @@
         --accent: #38bdf8; /* Sky 400 */
         --border: #334155;
       }
+      
       body {
         background-color: var(--bg-color);
         color: var(--text-main);
         font-family: system-ui, -apple-system, sans-serif;
         margin: 0;
         padding: 0;
+
+        padding-top: 80px; 
         line-height: 1.6;
       }
+      
       .container {
         max-width: 768px;
         margin: 0 auto;
         padding: 2rem;
       }
-      /* Top Navigation */
+      
       nav {
         display: flex;
         justify-content: flex-end;
@@ -41,16 +47,29 @@
         padding: 1.5rem 2rem;
         background-color: var(--card-bg);
         border-bottom: 1px solid var(--border);
+        box-sizing: border-box; /* Prevents padding from breaking the 100% width */
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        transition: transform 0.3s ease-in-out;
       }
+      
+      nav.hide-header {
+        transform: translateY(-100%);
+      }
+
       nav a {
         color: var(--text-main);
         text-decoration: none;
         font-weight: 500;
         transition: color 0.2s;
       }
+      
       nav a:hover { color: var(--accent); }
       
-      /* GitHub-like Markdown Styling */
       .markdown-body h1, .markdown-body h2 {
         border-bottom: 1px solid var(--border);
         padding-bottom: 0.3em;
@@ -67,12 +86,34 @@
     </style>
   </head>
   <body>
-    <nav>
+
+    <nav id="main-header">
       <a href="/#projects">Projects</a>
       <a href="/#thesis">Thesis</a>
     </nav>
     <main class="container">
       <slot />
     </main>
+
+    <script>
+      let lastScrollY = window.scrollY;
+      const header = document.getElementById('main-header');
+
+      window.addEventListener('scroll', () => {
+        // If at the very top, always show it
+        if (window.scrollY <= 0) {
+          header?.classList.remove('hide-header');
+          return;
+        }
+
+        if (window.scrollY > lastScrollY) {
+          header?.classList.add('hide-header');
+        } else {
+          header?.classList.remove('hide-header');
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    </script>
   </body>
 </html>
