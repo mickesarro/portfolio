@@ -22,7 +22,9 @@ const projects = defineCollection({
 const pages = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/pages" }),
   schema: z.object({
-    title: z.string()
+    title: z.string(),
+    link: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   })
 });
 
