@@ -1,5 +1,5 @@
 ---
-title: "Arduino-Analog-VTX Interferer"
+title: "Arduino Analog VTX Interferer"
 order: 2
 description: "DIY SmartAudio VTX Controller"
 links: 

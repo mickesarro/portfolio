@@ -3,10 +3,7 @@ title: "Movement Shooter"
 order: 1
 description: "Multiplayer FPS shooter made with S&box. A Work in Progress multiplayer game that we've been developing as a 4 person team."
 links: 
-  - name: "Trailer"
-    url: "https://seafile.utu.fi/smart-link/5369f4f5-652b-43ea-9023-0da7ad9b9945/"
-
-  - name: "S&Box"
+  - name: "Trailer/Home Page"
     url: "https://sbox.game/peliryhma/movementshooter"
   
 tags: ["C#", "Game Development"]
