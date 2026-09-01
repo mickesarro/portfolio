@@ -1,7 +1,7 @@
 ---
 title: "Movement Shooter"
 order: 1
-description: "A fast-paced multiplayer first-person shooter built by a 4-person team using Facepunch’s S&box game engine."
+description: "A multiplayer first-person movement shooter developed with a four-person team. It is built it using Facepunch's S&box game engine framework. The main goal is to create fun and intuitive movement with mechanics like bhopping and rocket jumping. Players can use weapons like railguns and rockets in a fast-paced Deathmatch game mode. It’s a continuous work-in-progress focused on fluid mechanics, stylized 3D graphics, and smooth gameplay."
 links: 
   - name: "Trailer/Home Page"
     url: "https://sbox.game/peliryhma/movementshooter"

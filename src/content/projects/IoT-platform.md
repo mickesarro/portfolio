@@ -1,7 +1,7 @@
 ---
 title: "IoT Platform"
 order: 3
-description: "Lightweight MultiProtocol IoT Platform"
+description: "A lightweight multi-protocol IoT middleware that connects physical edge devices to cloud-based dashboards. It handles device registration, local data storage using a SQLite database, and automatically forwards telemetry data to a containerized ThingsBoard instance. The platform features a decoupled architecture, meaning it can handle HTTP, MQTT, and CoAP protocols simultaneously without blocking. It’s a complete pipeline built with Python and Docker to bridge local sensors and cloud visualization."
 links: 
   - name: "IEEE Style Report"
     url: "https://github.com/mickesarro/IoT-platform-project/blob/main/Sarro_IoT_final_report.pdf"

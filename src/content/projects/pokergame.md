@@ -1,7 +1,7 @@
 ---
 title: "Poker Game"
 order: 5
-description: "Multiplayer Poker game."
+description: "A Java-based multiplayer Texas Hold’em poker game designed for online play with up to eight players. I built it using a custom server-client architecture, utilizing standard Java Sockets to manage the game state and process real-time player actions. The project evolved from a simple terminal-based prototype into a full graphical application using JavaFX. It also features a custom logic evaluator to automatically determine the strongest winning hand for each player. Overall, it was a great way to practice networked gaming logic, concurrency, and real-time client-server communication."
 links: 
   - name: "GitLab"
     url: "https://gitlab.utu.fi/mosarr/pokergame"
