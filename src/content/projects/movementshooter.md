@@ -32,18 +32,18 @@ The game is built with Facepunch's [S&box](https://sbox.game/) game engine/devel
 
 ## What does the player see/hear?​
 Representation: 3D ​\
-Art style: Stylized?​
+Art style: Stylized?
 
 See:​
 - Terrain​
 - Other players​
-- Bots (?)​
+- Bots 
 - 1st person viewmodel​
 
 Hear:​
 - Player movement​
 - Shooting​
-- Background music or other ambient sounds (?)​
+- Background music or other ambient sounds
 - Various other SFXs
 
 ## Attribution

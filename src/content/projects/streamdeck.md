@@ -1,6 +1,6 @@
 ---
 title: "Stream Deck Project"
-order: 1
+order: 4
 description: "Custom-built touchscreen Stream Deck paired with a physical audio mixer. It uses a repurposed rooted Samsung Galaxy S3 as the touchscreen interface, while the physical hardware mixer runs on the deej software using an Arduino Nano with four potentiometers."
 links: 
   - name: "GitHub"
@@ -69,4 +69,4 @@ Custom-built touchscreen "Stream Deck" paired with a physical audio mixer. It us
 
 ### Showcase
 
-The physical mixer and the smartphone are fitted into a cardboard box that's painted black :D. A  3D printed case would be the next addition to have a more finalized look. Other future additions would include a simple function to easily add/remove buttons and actions into the mixer.
+Currently the physical mixer and the smartphone are fitted into a cardboard box that's painted black. A  3D printed case would be the next addition to have a more finalized look. Other future additions would include a simple function to easily add/remove buttons and actions into the mixer.
