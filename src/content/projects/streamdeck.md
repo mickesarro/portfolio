@@ -5,7 +5,7 @@ description: "Custom-built touchscreen Stream Deck paired with a physical audio 
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Stream-Deck-Project"
-tags: ["Python", "Flask"]
+tags: ["Python", "Flask", "UI"]
 image: "streamdeck.jpeg"
 ---
 
