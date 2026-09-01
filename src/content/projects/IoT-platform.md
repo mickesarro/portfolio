@@ -9,7 +9,7 @@ links:
   - name: "GitHub"
     url: "https://github.com/mickesarro/IoT-platform-project"
   
-tags: ["Python", "IoT", "Middleware", "Multi-Protocol", "MQTT", "CoAP", "Flask", "ThingsBoard"]
+tags: ["Python", "Docker", "IoT", "Middleware", "MQTT", "CoAP", "Flask", "ThingsBoard"]
 image: "iot-platform.png"
 ---
 

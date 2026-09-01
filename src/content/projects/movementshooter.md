@@ -6,7 +6,7 @@ links:
   - name: "Trailer/Home Page"
     url: "https://sbox.game/peliryhma/movementshooter"
   
-tags: ["C#", "Game Development"]
+tags: ["C#", "Game Development", "Multiplayer", "FPS"]
 image: "movementshooter.png"
 ---
 

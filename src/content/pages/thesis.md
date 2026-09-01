@@ -1,7 +1,7 @@
 ---
 title: "Älykkäisiin sähköverkkoihin kohdistuvat kyberuhat ja niiden torjuminen"
 link: "https://www.utupub.fi/items/e9c2df43-07e1-4175-ae15-d64964942ecd"
-tags: ["LaTeX", "Smart Grids", "Academic Writing", "Research"]
+tags: ["LaTeX", "Smart Grids", "Cybersecurity", "Academic Writing", "Research"]
 
 ---
 TURUN YLIOPISTO

@@ -6,7 +6,7 @@ links:
   - name: "GitLab"
     url: "https://gitlab.utu.fi/mosarr/pokergame"
   
-tags: ["Java", "Game Development", "Networking", "Sockets"]
+tags: ["Java", "Game Development", "Networking", "Client-Server", "Sockets", "GUI"]
 image: "pokergame.png"
 ---
 

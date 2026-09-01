@@ -5,7 +5,7 @@ description: "A custom built touchscreen Stream Deck paired with a physical audi
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Stream-Deck-Project"
-tags: ["Python", "Flask", "UI"]
+tags: ["Python", "Flask", "Web UI", "JavaScript"]
 image: "streamdeck.jpeg"
 ---
 

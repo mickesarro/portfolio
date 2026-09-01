@@ -5,7 +5,7 @@ description: "A DIY Arduino-based controller that communicates with an analog FP
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Arduino-Analog-VTX/tree/main"
-tags: ["Arduino", "Smart Audio"]
+tags: ["Arduino", "SmartAudio", "Hardware", "C++", "FPV"]
 image: "vtx-video.png"
 ---
 
