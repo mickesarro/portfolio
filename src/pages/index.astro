@@ -91,7 +91,7 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
               <img src={project.data.image} alt={project.data.title} style="max-width: 100%; border-radius: 6px; margin-bottom: 1rem;" />
             )}
 
-            <p style="margin: 0 0 1rem 0;">{project.data.description}</p>
+            <p style="margin: 0 0 1rem 0;" set:html={project.data.description}></p>
 
             <button class="read-more-btn" aria-expanded="false">
               <span class="icon">

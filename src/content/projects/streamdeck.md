@@ -1,7 +1,7 @@
 ---
 title: "Stream Deck Project"
 order: 4
-description: "A custom built touchscreen Stream Deck paired with a physical audio mixer. It uses a repurposed Samsung Galaxy S3 for the touch interface and an Arduino Nano paired with 4 potentiometers to physically control audio. The setup lets you independently mix the volume of specific PC apps like Discord, Firefox, and Spotify. A local Python Flask app connects the phone and PC, providing on-screen media controls, live volume sliders, and a dedicated Spotify dashboard. A more in-depth showcase can be found on the GitHub ![page](https://github.com/mickesarro/Stream-Deck-Project#showcase)"
+description: "A custom built touchscreen Stream Deck paired with a physical audio mixer. It uses a repurposed Samsung Galaxy S3 for the touch interface and an Arduino Nano paired with 4 potentiometers to physically control audio. The setup lets you independently mix the volume of specific PC apps like Discord, Firefox, and Spotify. A local Python Flask app connects the phone and PC, providing on-screen media controls, live volume sliders, and a dedicated Spotify dashboard. A more in-depth showcase can be found on the <a href='https://github.com/mickesarro/Stream-Deck-Project#showcase' target='_blank' style='color: var(--accent); text-decoration: underline;'>GitHub page</a>."
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Stream-Deck-Project"

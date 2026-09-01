@@ -1,7 +1,7 @@
 ---
 title: "Analog VTX Interferer"
 order: 2
-description: "A DIY Arduino-based controller that communicates with an analog FPV video transmitter using the SmartAudio protocol. It allows you to easily set the transmitting channel, output power, and pit mode without needing a flight controller. By wiring an Arduino Nano to a BetaFPV VTX and adding a single push button, I can quickly cycle through channels and power levels on the fly. It was a great hardware experiment to better understand analog video signals and data protocols. A video showcase on GitHub." 
+description: "A DIY Arduino-based controller that communicates with an analog FPV video transmitter using the SmartAudio protocol. It allows you to easily set the transmitting channel, output power, and pit mode without needing a flight controller. By wiring an Arduino Nano to a BetaFPV VTX and adding a single push button, I can quickly cycle through channels and power levels on the fly. It was a great hardware experiment to better understand analog video signals and data protocols. A video showcase on <a href='https://github.com/mickesarro/Arduino-Analog-VTX/tree/main#usage' target='_blank' style='color: var(--accent); text-decoration: underline;'>GitHub</a>." 
 links: 
   - name: "GitHub"
     url: "https://github.com/mickesarro/Arduino-Analog-VTX/tree/main"
