@@ -1,7 +1,7 @@
 ---
 title: "Älykkäisiin sähköverkkoihin kohdistuvat kyberuhat ja niiden torjuminen"
 link: "https://www.utupub.fi/items/e9c2df43-07e1-4175-ae15-d64964942ecd"
-tags: ["LaTeX", "Smart Grids", "Cybersecurity", "Academic Writing", "Research"]
+tags: ["LaTeX", "Cybersecurity", "Smart Grids", "Critical infrastructure", "Academic Writing", "Research"]
 
 ---
 TURUN YLIOPISTO
@@ -37,4 +37,3 @@ Kattava kyberturvallisuus edellyttää riskien tunnistamista, ennakoivaa suojaut
 ta ja jatkuvaa sopeutumiskykyä kehittyvään uhkaympäristöön. Lopuksi työ tuo esiin
 kyberturvallisuuden keskeisen roolin yhteiskunnan toimivuuden ja huoltovarmuuden
 turvaamisessa.
-Asiasanat: älykkäät sähköverkot, kriittinen infrastruktuuri, kyberturvallisuus
