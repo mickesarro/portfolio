@@ -58,7 +58,7 @@ const sortedProjects = projects.sort((a, b) => a.data.order - b.data.order);
       {sortedProjects.map(async (project) => {
         const { Content } = await render(project);
         return (
-          <article style="background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+          <article id={project.data.id || project.slug} style="background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
             <header style="margin-bottom: 1rem;">
               <div style="display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.5rem;">
                 <h3 style="margin: 0; font-size: 1.5rem; color: var(--accent);">

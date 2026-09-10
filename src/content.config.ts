@@ -15,6 +15,7 @@ const projects = defineCollection({
     ).optional(),
     image: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    id: z.string().optional(),
   })
 });
 
