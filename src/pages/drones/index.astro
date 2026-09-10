@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Content as DroneInfo } from './drone-info.md';
+---
+
+<Layout>
+  <section>
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem; margin-top: 0;">Drones</h1>
+    
+    <div style="color: var(--text-muted); margin-bottom: 2rem;" class="drone-intro">
+      <DroneInfo />
+    </div>
+    
+    <div class="drone-links">
+      <a href="/drones/clips" class="drone-card">
+        <h3>Drone Clips</h3>
+        <p>FPV clips and videos from the simulator as well with real FPV.</p>
+      </a>
+
+      <a href="/drones/" class="drone-card">
+        <h3>Drone Builds</h3>
+        <p>*Still under construction*</p>
+      </a>
+    
+      
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .drone-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .drone-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-main);
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.2s ease;
+  }
+
+  .drone-card:hover {
+    background-color: var(--bg-color);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .drone-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+    font-size: 1.3rem;
+  }
+  
+  .drone-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+</style>

@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout>
+  <section>
+    <a href="/drones" class="back-link">&larr; Back</a>
+    <h1 style="font-size: 2.5rem; margin-bottom: 2rem; margin-top: 1rem;">Drone Clips</h1>
+    
+    <div class="video-grid">
+      
+      <!-- Video Item 1 -->
+        <div class="video-card">
+        <h3>The Zone FPV sim: Top 100 on all 6 tracks</h3>
+        <div class="video-wrapper">
+            <iframe 
+            src="https://www.youtube.com/embed/6qARtnDhQKg?si=i9MNEUyIQVxmxcYH"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        </div>
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .back-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .video-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .video-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+
+  .video-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #000;
+    padding-bottom: 56.25%; 
+  }
+
+  .video-wrapper video, .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+</style>
