@@ -11,7 +11,7 @@ import Layout from '../../layouts/Layout.astro';
       
       <!-- Video Item 1 -->
         <div class="video-card">
-        <h3>The Zone FPV sim: Top 100 on all 6 tracks</h3>
+        <h3>The Zone FPV Sim: Top 100 on All 6 Tracks</h3>
         <div class="video-wrapper">
             <iframe 
             src="https://www.youtube.com/embed/6qARtnDhQKg?si=i9MNEUyIQVxmxcYH"
@@ -21,6 +21,56 @@ import Layout from '../../layouts/Layout.astro';
             allowfullscreen>
             </iframe>
         </div>
+        <description><a href='https://store.steampowered.com/app/3491280/The_Zone__FPV_Drone_Simulator/' 
+        target='_blank' style='color: var(--accent); text-decoration: underline;'>The Zone</a> is 
+        an FPV simulator known for its very realistic drone physics compared to other simulators, and it's definitely the best for 
+        improving in-real-life flying in my opinion. Although the map selection or graphics are not nearly as good as other titles. Here are my racing PBs after some practice. </description>
+        </div>
+
+        <!-- Video Item 2 -->
+        <div class="video-card">
+        <h3>First Tinywhoop Edit</h3>
+        <div class="video-wrapper">
+            <iframe 
+            src="https://www.youtube.com/embed/xbIWS9DlHoU?si=IvxrVXPaeo8aYKIO"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        <description>These were the first clips I got with my new tinywhoop with just over a week of flying. </description>
+        </div>
+
+        <!-- Video Item 3 -->
+        <div class="video-card">
+        <h3>Toyota Altezza Edit</h3>
+        <div class="video-wrapper">
+            <iframe 
+            src="https://www.youtube.com/embed/9cZSFQcVPoA?si=s72a4JDXO4TFlXp_"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        <description>Filmed my friends JDM car. </description>
+        </div>
+
+        <!-- Video Item 4 -->
+        <div class="video-card">
+        <h3>Asetto Corsa FPV</h3>
+        <div class="video-wrapper">
+            <iframe 
+            src="https://www.youtube.com/embed/x6ocakStPm4?si=CIY6mHGRcYg8G-v2"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        <description>Wanted to learn to film more drifting. I downloaded and FPV mod for Asetto Corsa and went to online servers to chase cars. 
+        Just some simple clips made into an edit. </description>
         </div>
 
     </div>
@@ -55,6 +105,12 @@ import Layout from '../../layouts/Layout.astro';
     margin-top: 0;
     margin-bottom: 1rem;
     color: var(--text-main);
+  }
+
+  .video-card description {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .video-wrapper {
