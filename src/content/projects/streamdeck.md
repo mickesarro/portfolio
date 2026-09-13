@@ -69,4 +69,4 @@ Custom-built touchscreen "Stream Deck" paired with a physical audio mixer. It us
 
 ### Showcase
 
-Currently the physical mixer and the smartphone are fitted into a cardboard box that's painted black. A  3D printed case would be the next addition to have a more finalized look. Other future additions would include a simple function to easily add/remove buttons and actions into the mixer.
+Currently the physical mixer and the smartphone are fitted into a cardboard box. A  3D printed case would be the next addition to have a more finalized look. Other future additions would include a simple function to easily add/remove buttons and actions into the mixer.
